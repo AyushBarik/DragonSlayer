@@ -248,6 +248,7 @@ function restart() {
   goTown();
 }
 
+//easter egg minigame
 function easterEgg() {
   update(locations[7]);
 }
