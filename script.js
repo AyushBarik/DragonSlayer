@@ -1,5 +1,5 @@
 let xp = 0;
-let health = 100;
+let health = 300;
 let gold = 50;
 let currentWeapon = 0;
 let fighting;
@@ -80,7 +80,7 @@ const locations = [
         name: "win", 
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"], 
         "button functions": [restart, restart, restart], 
-        text: "You defeated the Dragon! YOU WIN THE GAME! 🎉" 
+        text: "You stand amidst the fallen dragon, its once formidable presence now inert. An odd emptiness fills you as you gaze upon its lifeless form. 'O mighty son of █████, you have our eternal graditude!' the previously heard strange voice resonates, a whisper from the town's depths, however this time evoking an eerie sense of familiarity you can't quite grasp. Blood trickles from the hole in your chest. In the haze, you finally recall the origin of the voice. '█████████,' you murmur, a name etched in your fading consciousness. The mysterious voice, now tinged with a maniacal laughter, shrieks loudly. Suddenly, a crimson rune blazes on your left eye, banishing the encroaching darkness. The river of time embraces you before Death can, and you swim backwards against it's current. In the distance, a solitary cicada's chirp echoes, a cryptic herald of the unknown path ahead." 
     },
     {
         name: "easter egg",
@@ -100,10 +100,18 @@ function update(location) {
   button1.innerText = location["button text"][0];
   button2.innerText = location["button text"][1];
   button3.innerText = location["button text"][2];
+  if(location == locations[6]) {
+  button1.disabled = true;
+  button2.disabled = true;
+  button3.disabled = true;
+  } else {
   button1.onclick = location["button functions"][0];
   button2.onclick = location["button functions"][1];
   button3.onclick = location["button functions"][2];
+  }
   text.innerText = location.text;
+
+  
 }
 
 function goTown() {
