@@ -78,7 +78,7 @@ const locations = [
     },
     { 
         name: "win", 
-        "button text": ["REPLAY?", "REPLAY?", "REPLAY?"], 
+        "button text": ["YOU", "HAVE", "WON!"], 
         "button functions": [restart, restart, restart], 
         text: "You stand amidst the fallen dragon. You have emerged victorious"
     },
