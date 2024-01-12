@@ -80,7 +80,7 @@ const locations = [
         name: "win", 
         "button text": ["YOU", "HAVE", "WON!"], 
         "button functions": [restart, restart, restart], 
-        text: "You stand amidst the fallen dragon. You have emerged victorious"
+        text: "You stand amidst the fallen dragon. You have emerged victorious!"
     },
     {
         name: "easter egg",
