@@ -246,7 +246,7 @@ function winGame() {
 
 function restart() {
   xp = 0;
-  health = 100;
+  health = 150;
   gold = 50;
   currentWeapon = 0;
   inventory = ["stick"];
