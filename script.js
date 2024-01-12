@@ -237,6 +237,7 @@ function defeatMonster() {
 }
 
 function lose() {
+  healthText.innertext = 0;
   update(locations[5]);
 }
 
