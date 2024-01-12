@@ -74,7 +74,7 @@ const locations = [
         name: "lose",
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
-        text: "Your life flashes before you. Though unfortunate that you have to part with this world so soon, you have no regrets. You have died."
+        text: "Your life flashes before you. The last thing you think of is your wife. If only you could have seen her one last time... You have died."
     },
     { 
         name: "win", 
