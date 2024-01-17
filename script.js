@@ -96,6 +96,7 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 function update(location) {
+  gameMusic.play();
   monsterStats.style.display = "none";
   button1.innerText = location["button text"][0];
   button2.innerText = location["button text"][1];
